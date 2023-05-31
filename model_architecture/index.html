@@ -1,0 +1,758 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../cadcad_compatibility/">
+      
+      
+        <link rel="next" href="../faq_and_troubleshooting/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Model Architecture - radCAD documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#model-architecture" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="radCAD documentation" class="md-header__button md-logo" aria-label="radCAD documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            radCAD documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Model Architecture
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="radCAD documentation" class="md-nav__button md-logo" aria-label="radCAD documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    radCAD documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples_accessible/" class="md-nav__link">
+        Examples (accessible)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_features/" class="md-nav__link">
+        Advanced Features
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cadcad_compatibility/" class="md-nav__link">
+        cadCAD Compatibility
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Model Architecture
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Model Architecture
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-classes" class="md-nav__link">
+    Main classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-classes" class="md-nav__link">
+    Additional Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-or-parallel-processes" class="md-nav__link">
+    Serial or Parallel Processes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helper-classes" class="md-nav__link">
+    Helper classes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
+  </a>
+  
+    <nav class="md-nav" aria-label="Extensions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-cadcad-compatibility-mode" class="md-nav__link">
+    For cadCAD compatibility mode:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-remote-cluster-execution-using-ray" class="md-nav__link">
+    For remote cluster execution (using Ray)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq_and_troubleshooting/" class="md-nav__link">
+        FAQ and Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-classes" class="md-nav__link">
+    Main classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-classes" class="md-nav__link">
+    Additional Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Additional Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serial-or-parallel-processes" class="md-nav__link">
+    Serial or Parallel Processes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helper-classes" class="md-nav__link">
+    Helper classes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
+  </a>
+  
+    <nav class="md-nav" aria-label="Extensions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-cadcad-compatibility-mode" class="md-nav__link">
+    For cadCAD compatibility mode:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-remote-cluster-execution-using-ray" class="md-nav__link">
+    For remote cluster execution (using Ray)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="model-architecture">Model Architecture<a class="headerlink" href="#model-architecture" title="Permanent link">#</a></h1>
+<hr />
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="#main-classes">Main classes</a> </li>
+<li><a href="#additional-classes">Additional Classes</a></li>
+<li><a href="#extensions">Extensions</a></li>
+</ul>
+<hr />
+<h2 id="main-classes">Main classes<a class="headerlink" href="#main-classes" title="Permanent link">#</a></h2>
+<p>We have already mentioned the hierarchy of the four most important classes which, ffrom the point of view of function, could be expressed as: <code>Model</code> &gt; <code>Simulation</code> &gt; <code>Experiment</code> &gt; <code>Engine</code>.</p>
+<ul>
+<li><code>Model</code> class expresses the model specification, most important part of which is passed throught the parameters <code>initial_state</code>, <code>state_update_blocks=state_update_blocks</code>, <code>params</code>. Below is an example of an instance from the Model class:</li>
+</ul>
+<pre><code class="language-python">model = Model(initial_state=initial_state, 
+              state_update_blocks=state_update_blocks, 
+              params=params)
+</code></pre>
+<ul>
+<li><code>Simulation</code> is a class used for simulating a <code>Model</code>. It extends the class <code>Executable</code> and contains nan implemetnation of the method <code>run</code>, most other elements are inherited from the class <code>Executable</code>. Example of initiating the simulation:</li>
+</ul>
+<pre><code class="language-python">simulation = Simulation(model=model, timesteps=100_000, runs=1)
+
+result = simulation.run()
+df = pd.DataFrame(result)
+</code></pre>
+<ul>
+<li><code>Experiment</code> consists of one or more <code>Simulation</code> snd is sldo an extension of the class <code>Executable</code>. Example of initiating an experiment consisting of one or more of <code>Simulation</code>:</li>
+</ul>
+<pre><code class="language-python">experiment = Experiment([simulation_1, simulation_2, simulation_3])
+result = experiment.run()
+
+df = pd.DataFrame(result)
+</code></pre>
+<ul>
+<li><code>Engine</code> - class that handles configuration and execution of experiments and simulations. It is a method first defined for the class <code>Executable</code> and then inherited by classes  <code>Simulation</code> and <code>Experiment</code>.</li>
+</ul>
+<h2 id="additional-classes">Additional Classes<a class="headerlink" href="#additional-classes" title="Permanent link">#</a></h2>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">#</a></h3>
+<ul>
+<li><code>SimulationExecutionSpecification</code> - a data class that prepares some of the elements of simulation specification that are common for most experiments, in particular the organisation into blocks, steps and substeps.</li>
+<li><code>SimulationExecution</code> - extends <code>SimulationExecutionSpecification</code> and defines various properties and functions needed to execute the simulation.</li>
+<li><code>Executable</code> - instances of class <code>Executable</code> contain all information about the model specification and simulation configuration and can be passed to either <code>Simulation</code> (for a single simulation) or to <code>Experiment</code> (for multiple simulations). <code>E</code> contains a method <code>run</code> which is not implemented, as that implementation takes place at the level of either <code>Simulation</code> or <code>Experiment</code>.</li>
+</ul>
+<h3 id="serial-or-parallel-processes">Serial or Parallel Processes<a class="headerlink" href="#serial-or-parallel-processes" title="Permanent link">#</a></h3>
+<p>All the classes below extend the <code>Executor</code> and provide an implementation of the <code>execute_runs</code> method. Refer to <a href="advanced_features/#selecting-single-or-multi-process-modes">Selecting single or multi-process modes</a>.</p>
+<ul>
+<li>ExecutorSingleProcess - simulation will be executed using single (serial) process</li>
+<li>ExecutorMultiprocessing - simulation will be executed using multiple processes with <a href="https://pypi.org/project/multiprocessing/"><code>multiprocessing</code> library</a>, the number of parallel processes used is set up to the number of system CPUs less one</li>
+<li>ExecutorPathos - simulation will be executed using multiple processes; Pathos re-writes the core code in Python rather than C, for ease of maintenance at cost of performance, see: <a href="https://pathos.readthedocs.io/en/latest/pathos.html#module-pathos.multiprocessing">pathos.multiprocessing</a></li>
+<li>ExecutorRay - multiprocessing backend based on Ray, run locally.</li>
+<li>ExecutorRayRemote -  multiprocessing backend based on Ray, run remotely.</li>
+</ul>
+<h3 id="helper-classes">Helper classes<a class="headerlink" href="#helper-classes" title="Permanent link">#</a></h3>
+<ul>
+<li><code>Dataclass</code> - used to ascertain that something is a <code>dataclass</code> from module <a href="https://pypi.org/project/dataclasses/"><code>dataclasses</code></a>,</li>
+<li><code>Context</code> - mutable context passed to <a href="advanced_features/#hooks-to-extend-functionality">simulation hooks</a>.</li>
+<li><code>Backend</code> - codes which backend to use, current options: single process, multiprocessing, Pathos, Ray and Ray remote, with Pathos being the default.</li>
+<li><code>Executor</code> - class that defines the template for executing runs, but itself doesn't provide any implementation for the backend run execution, see: <a href="#single-or-parallel-process">Single or Parallel Process</a>.</li>
+</ul>
+<h2 id="extensions">Extensions<a class="headerlink" href="#extensions" title="Permanent link">#</a></h2>
+<h3 id="for-cadcad-compatibility-mode">For cadCAD compatibility mode:<a class="headerlink" href="#for-cadcad-compatibility-mode" title="Permanent link">#</a></h3>
+<p>In <code>radcad/compat/cadCAD/engine</code> the class <code>Executor</code> is used to extend the cadCAD class <code>Executor</code> from <code>cadcad/engine</code>. Jump here to read more about the <a href="../cadcad_compatibility/">cadCAD compatibility mode</a>.</p>
+<h3 id="for-remote-cluster-execution-using-ray">For remote cluster execution (using Ray)<a class="headerlink" href="#for-remote-cluster-execution-using-ray" title="Permanent link">#</a></h3>
+<p>In <code>radcad/extensions/backends</code> the classes <code>ExecutorRay</code> and <code>ExecutorRayRemote</code> are used to extend the standard radCAD class <code>Executor</code>. Jump here to read more about using the <a href="advanced_features/#wip-remote-cluster-execution-using-ray">remote cluster execution</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
+</html>

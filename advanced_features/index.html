@@ -1,0 +1,924 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../features/">
+      
+      
+        <link rel="next" href="../reference/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Advanced Features - radCAD documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-features" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="radCAD documentation" class="md-header__button md-logo" aria-label="radCAD documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            radCAD documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Features
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="radCAD documentation" class="md-nav__button md-logo" aria-label="radCAD documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    radCAD documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples_accessible/" class="md-nav__link">
+        Examples (accessible)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Advanced Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Advanced Features
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-classes-and-specifications" class="md-nav__link">
+    Model classes and specifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Model classes and specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterating-over-a-model" class="md-nav__link">
+    Iterating over a Model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-implementation" class="md-nav__link">
+    Model implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Model implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engine-settings" class="md-nav__link">
+    Engine Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Engine Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selecting-single-or-multi-process-modes" class="md-nav__link">
+    Selecting single or multi-process modes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-state-deepcopy" class="md-nav__link">
+    Disabling state deepcopy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes-on-state-mutation" class="md-nav__link">
+    Notes on state mutation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropping-state-substeps" class="md-nav__link">
+    Dropping state substeps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exception-handling" class="md-nav__link">
+    Exception handling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wip-remote-cluster-execution-using-ray" class="md-nav__link">
+    WIP: Remote Cluster Execution (using Ray)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hooks-to-extend-functionality" class="md-nav__link">
+    Hooks to extend functionality
+  </a>
+  
+    <nav class="md-nav" aria-label="Hooks to extend functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-hook-saving-results-to-hdf5" class="md-nav__link">
+    Example hook: Saving results to HDF5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cadcad_compatibility/" class="md-nav__link">
+        cadCAD Compatibility
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model_architecture/" class="md-nav__link">
+        Model Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq_and_troubleshooting/" class="md-nav__link">
+        FAQ and Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-classes-and-specifications" class="md-nav__link">
+    Model classes and specifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Model classes and specifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterating-over-a-model" class="md-nav__link">
+    Iterating over a Model
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-implementation" class="md-nav__link">
+    Model implementation
+  </a>
+  
+    <nav class="md-nav" aria-label="Model implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engine-settings" class="md-nav__link">
+    Engine Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Engine Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selecting-single-or-multi-process-modes" class="md-nav__link">
+    Selecting single or multi-process modes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-state-deepcopy" class="md-nav__link">
+    Disabling state deepcopy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes-on-state-mutation" class="md-nav__link">
+    Notes on state mutation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dropping-state-substeps" class="md-nav__link">
+    Dropping state substeps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exception-handling" class="md-nav__link">
+    Exception handling
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wip-remote-cluster-execution-using-ray" class="md-nav__link">
+    WIP: Remote Cluster Execution (using Ray)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hooks-to-extend-functionality" class="md-nav__link">
+    Hooks to extend functionality
+  </a>
+  
+    <nav class="md-nav" aria-label="Hooks to extend functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-hook-saving-results-to-hdf5" class="md-nav__link">
+    Example hook: Saving results to HDF5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="advanced-features">Advanced features<a class="headerlink" href="#advanced-features" title="Permanent link">#</a></h1>
+<hr />
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="#model-classes-and-specifications">Model classes and specifications</a></li>
+<li><a href="#model-implementation">Model implementation</a></li>
+</ul>
+<hr />
+<h2 id="model-classes-and-specifications">Model classes and specifications<a class="headerlink" href="#model-classes-and-specifications" title="Permanent link">#</a></h2>
+<h3 id="iterating-over-a-model">Iterating over a Model<a class="headerlink" href="#iterating-over-a-model" title="Permanent link">#</a></h3>
+<p>Model classes are iterable, so you can iterate over them step-by-step from one state to the next.</p>
+<p>This is useful for gradient descent, live digital twins, composing one model within another within a Policy Function...</p>
+<p>Here is an example of using a Model to update a Plotly figure live:</p>
+<pre><code class="language-python">from radcad import Model
+
+import time
+import plotly.graph_objects as go
+
+# Live update of figure using Model as a generator
+fig = go.FigureWidget()
+fig.add_scatter()
+fig.show()
+
+# Create a generator from the Model iterator
+model_generator = iter(Model(initial_state=initial_state, state_update_blocks=state_update_blocks, params=params))
+
+timesteps = 100
+results = []
+
+for t in range(timesteps):
+    # Step to next state
+    model = next(model_generator)
+    # Get state and update figure
+    state = model.state
+    a = state['a']
+    results.append(a)
+    fig.data[0].y = results[:t]
+</code></pre>
+<p>You have access to the more advanced engine options too, using the <code>__call__()</code> method:</p>
+<pre><code class="language-python">model(raise_exceptions=False, deepcopy=True, drop_substeps=False)
+_model = next(model)
+</code></pre>
+<p>Current limitations:
+* Only works for single subsets (no parameter sweeps)</p>
+<h2 id="model-implementation">Model implementation<a class="headerlink" href="#model-implementation" title="Permanent link">#</a></h2>
+<h3 id="engine-settings">Engine Settings<a class="headerlink" href="#engine-settings" title="Permanent link">#</a></h3>
+<h4 id="selecting-single-or-multi-process-modes">Selecting single or multi-process modes<a class="headerlink" href="#selecting-single-or-multi-process-modes" title="Permanent link">#</a></h4>
+<p>By default <code>radCAD</code> uses the <code>multiprocessing</code> library and sets the number of parallel processes used by the <code>Engine</code> to the number of system CPUs less one, but this can be customized as follows:</p>
+<pre><code class="language-python">from radcad import Engine
+
+...
+
+experiment.engine = Engine(processes=1)
+result = experiment.run()
+</code></pre>
+<p>Alternatively, select the <code>SINGLE_PROCESS</code> Backend option which doesn't use any parallelisation library:</p>
+<pre><code class="language-python">from radcad import Engine, Backend
+
+...
+
+experiment.engine = Engine(backend=Backend.SINGLE_PROCESS)
+result = experiment.run()
+</code></pre>
+<h4 id="disabling-state-deepcopy">Disabling state <code>deepcopy</code><a class="headerlink" href="#disabling-state-deepcopy" title="Permanent link">#</a></h4>
+<p>To improve performance, at the cost of mutability, the <code>Engine</code> module has the <code>deepcopy</code> option which is <code>True</code> by default:</p>
+<pre><code class="language-python">experiment.engine = Engine(deepcopy=False)
+</code></pre>
+<h4 id="notes-on-state-mutation">Notes on state mutation<a class="headerlink" href="#notes-on-state-mutation" title="Permanent link">#</a></h4>
+<p>The biggest performance bottleneck with radCAD, and cadCAD for that matter, is avoiding mutation of state variables by creating a deep copy of the state passed to the state update function. This avoids the state update function mutating state variables outside of the framework by creating a copy of it first -  a deep copy creates a copy of the object itself, and the key value pairs, which gets expensive.</p>
+<p>To avoid the additional overhead, mutation of state history is allowed, and left up to the developer to avoid using standard Python best practises, but mutation of the current state is disabled.</p>
+<p>See this <a href="https://stackoverflow.com/questions/24756712/deepcopy-is-extremely-slow">thread on Stack Overflow</a> for some performance benchmarks of different methods. radCAD uses <code>cPickle</code>, which is faster than using <code>deepcopy</code>, but less flexible about what types it can handle (Pickle depends on serialization) - these could be interchanged in future.</p>
+<h4 id="dropping-state-substeps">Dropping state substeps<a class="headerlink" href="#dropping-state-substeps" title="Permanent link">#</a></h4>
+<p>If you don't need the substeps in post-processing, you can both improve simulation performance and save post-processing time and dataset size by dropping the substeps:</p>
+<pre><code class="language-python">experiment.engine = Engine(drop_substeps=True)
+</code></pre>
+<h4 id="exception-handling">Exception handling<a class="headerlink" href="#exception-handling" title="Permanent link">#</a></h4>
+<p>radCAD allows you to choose whether to raise exceptions, ending the simulation, or to continue with the remaining runs and return the results along with the exceptions. Failed runs are returned as partial results - the part of the simulation result up until the timestep where the simulation failed.</p>
+<pre><code class="language-python">...
+experiment.engine = Engine(raise_exceptions=False)
+experiment.run()
+
+results = experiment.results # e.g. [[{...}, {...}], ..., [{...}, {...}]]
+exceptions = experiment.exceptions # A dataframe of exceptions, tracebacks, and simulations metadata
+</code></pre>
+<p>This also means you can run a specific simulation directly, and access the results later:</p>
+<pre><code class="language-python">predator_prey_simulation.run()
+
+...
+
+results = predator_prey_simulation.results
+</code></pre>
+<h3 id="wip-remote-cluster-execution-using-ray">WIP: Remote Cluster Execution (using Ray)<a class="headerlink" href="#wip-remote-cluster-execution-using-ray" title="Permanent link">#</a></h3>
+<p>To use the Ray backend, install radCAD with the <code>extension-backend-ray</code> dependencies:</p>
+<pre><code class="language-bash">pip install -e .[extension-backend-ray]
+# Or
+poetry install -E extension-backend-ray
+</code></pre>
+<p>Export the following AWS credentials (or see Ray documentation for alternative providers):</p>
+<pre><code class="language-bash">BACKEND=AWS
+AWS_ACCESS_KEY_ID=***
+AWS_SECRET_ACCESS_KEY=***
+</code></pre>
+<p>Start a new cluster (or use existing):</p>
+<pre><code class="language-bash"># Cluster config: single m5.large EC2 instance, us-west-2 region
+ray up cluster/aws/minimal.yaml
+# Test the connection
+ray exec cluster/aws/minimal.yaml 'echo &quot;hello world&quot;'
+</code></pre>
+<p>Change the execution backend to <code>RAY_REMOTE</code>:</p>
+<pre><code class="language-python">from radcad.engine import Engine, Backend
+import ray
+
+# Connect to cluster head
+ray.init(address='***:6379', _redis_password='***')
+
+...
+
+experiment.engine = Engine(backend=Backend.RAY_REMOTE)
+result = experiment.run()
+</code></pre>
+<p>Finally, spin down the cluster:</p>
+<pre><code class="language-bash">ray down cluster/ray-aws.yaml
+</code></pre>
+<h3 id="hooks-to-extend-functionality">Hooks to extend functionality<a class="headerlink" href="#hooks-to-extend-functionality" title="Permanent link">#</a></h3>
+<p>Hooks allow you to easily extend the functionality of radCAD with a stable API, and without having to manipulate the robust core.</p>
+<pre><code class="language-python">experiment.before_experiment = lambda experiment: print(f&quot;Before experiment with {len(experiment.simulations)} simulations&quot;)
+experiment.after_experiment = lambda experiment: print(f&quot;After experiment with {len(experiment.simulations)} simulations&quot;)
+experiment.before_simulation = lambda simulation: print(f&quot;Before simulation {simulation.index} with params {simulation.model.params}&quot;)
+experiment.after_simulation = lambda simulation: print(f&quot;After simulation {simulation.index} with params {simulation.model.params}&quot;)
+experiment.before_run = lambda context: print(f&quot;Before run {context}&quot;)
+experiment.after_run = lambda context: print(f&quot;After run {context}&quot;)
+experiment.before_subset = lambda context: print(f&quot;Before subset {context}&quot;)
+experiment.after_subset = lambda context: print(f&quot;After subset {context}&quot;)
+</code></pre>
+<p>See <a href="https://github.com/CADLabs/radCAD/blob/1f923904e8bbd8e818c990352b4104718a5fb275/tests/test_hooks.py">tests/test_hooks.py</a> for expected functionality.</p>
+<h4 id="example-hook-saving-results-to-hdf5">Example hook: Saving results to HDF5<a class="headerlink" href="#example-hook-saving-results-to-hdf5" title="Permanent link">#</a></h4>
+<pre><code class="language-python">import pandas as pd
+import datetime
+
+def save_to_HDF5(experiment, store_file_name, store_key):
+    now = datetime.datetime.now()
+    store = pd.HDFStore(store_file_name)
+    store.put(store_key, pd.DataFrame(experiment.results))
+    store.get_storer(store_key).attrs.metadata = {
+        'date': now.isoformat()
+    }
+    store.close()
+    print(f&quot;Saved experiment results to HDF5 store file {store_file_name} with key {store_key}&quot;)
+
+experiment.after_experiment = lambda experiment: save_to_HDF5(experiment, 'experiment_results.hdf5', 'experiment_0')
+</code></pre>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
+</html>

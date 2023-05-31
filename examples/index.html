@@ -1,0 +1,694 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../gettingstarted/">
+      
+      
+        <link rel="next" href="../examples_accessible/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Examples - radCAD documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#examples" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="radCAD documentation" class="md-header__button md-logo" aria-label="radCAD documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            radCAD documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Examples
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="radCAD documentation" class="md-nav__button md-logo" aria-label="radCAD documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    radCAD documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Examples
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Examples
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigate-to-accessible-version-with-no-dynamic-graphics-gifs" class="md-nav__link">
+    Navigate to: accessible version with no dynamic graphics (gifs).
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#illustratory-models" class="md-nav__link">
+    Illustratory Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Illustratory Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterable-models" class="md-nav__link">
+    Iterable Models
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-of-life" class="md-nav__link">
+    Game of Life
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predator-prey" class="md-nav__link">
+    Predator-Prey
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-source-models-using-radcad" class="md-nav__link">
+    Open-source Models Using radCAD
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples_accessible/" class="md-nav__link">
+        Examples (accessible)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced_features/" class="md-nav__link">
+        Advanced Features
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cadcad_compatibility/" class="md-nav__link">
+        cadCAD Compatibility
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model_architecture/" class="md-nav__link">
+        Model Architecture
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq_and_troubleshooting/" class="md-nav__link">
+        FAQ and Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#navigate-to-accessible-version-with-no-dynamic-graphics-gifs" class="md-nav__link">
+    Navigate to: accessible version with no dynamic graphics (gifs).
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#illustratory-models" class="md-nav__link">
+    Illustratory Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Illustratory Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iterable-models" class="md-nav__link">
+    Iterable Models
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#game-of-life" class="md-nav__link">
+    Game of Life
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predator-prey" class="md-nav__link">
+    Predator-Prey
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-source-models-using-radcad" class="md-nav__link">
+    Open-source Models Using radCAD
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">#</a></h1>
+<h2 id="navigate-to-accessible-version-with-no-dynamic-graphics-gifs">Navigate to: <a href="../examples_accessible/"><strong>accessible version</strong></a> with no dynamic graphics (gifs).<a class="headerlink" href="#navigate-to-accessible-version-with-no-dynamic-graphics-gifs" title="Permanent link">#</a></h2>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">#</a></h2>
+<hr />
+<ul>
+<li><a href="#illustratory-models">Illustratory Models</a></li>
+<li><a href="#open-source-models-using-radcad">Open-source Models Using radCAD</a></li>
+</ul>
+<hr />
+<h2 id="illustratory-models">Illustratory Models<a class="headerlink" href="#illustratory-models" title="Permanent link">#</a></h2>
+<h3 id="iterable-models">Iterable Models<a class="headerlink" href="#iterable-models" title="Permanent link">#</a></h3>
+<p>Using Models as live in-the-loop digital twins, creating your own model pipelines, and streaming simulation results to update a visualization. That's what an iterable Model class enables.</p>
+<p>Check here for a <a href="https://github.com/CADLabs/radCAD/blob/master/examples/iterable_models/iterable-models.ipynb">Jupyter  Notebook with an example</a>:</p>
+<p><img alt="Iterable Models" src="../images/iterable-models.gif" /></p>
+<h3 id="game-of-life"><a href="https://www.conwaylife.com/">Game of Life</a><a class="headerlink" href="#game-of-life" title="Permanent link">#</a></h3>
+<p><a href="https://share.streamlit.io/benschza/radcad/examples/streamlit/game_of_life/app.py">Live radCAD demo model on Streamlit</a></p>
+<p>A simple game where at each timestep, the following transitions occur:</p>
+<ol>
+<li>Any live cell with fewer than two live neighbours dies, as if by underpopulation.</li>
+<li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+<li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+</ol>
+<p>See <a href="https://github.com/CADLabs/radCAD/blob/master/examples/game_of_life/game-of-life.ipynb">examples/game_of_life/game-of-life.ipynb</a></p>
+<p><img alt="Game of Life" src="../images/game-of-life.gif" /></p>
+<h3 id="predator-prey"><a href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations">Predator-Prey</a><a class="headerlink" href="#predator-prey" title="Permanent link">#</a></h3>
+<p>A simple model that applies the two Lotka-Volterra differential equations, frequently used to describe the dynamics of biological systems in which two species interact:</p>
+<p>Original models thanks to <a href="https://github.com/danlessa/">Danilo @danlessa</a>!</p>
+<ul>
+<li>System dynamics model: <a href="https://github.com/CADLabs/radCAD/blob/dev/examples/predator_prey_sd/predator-prey-sd.ipynb">examples/predator_prey_sd/predator-prey-sd.ipynb</a></li>
+<li>Agent based model: <a href="https://github.com/CADLabs/radCAD/blob/dev/examples/predator_prey_abm/predator-prey-abm.ipynb">examples/predator_prey_abm/predator-prey-abm.ipynb</a></li>
+</ul>
+<p>For additional educational material about the Predator-Prey model, we recommend the cadCAD courses:</p>
+<p><a href="https://www.cadcad.education/course/bootcamp">cadCAD Complete Foundations Bootcamp</a>, which in Sections 5 and 6 introduces a model for an animal population interacting with the environment. The approach is carefully broken down into <strong>system requirements</strong> (including visual system mapping and mathematical specification), <strong>system design</strong> and <strong>system validation</strong>.</p>
+<p><a href="https://www.cadcad.education/course/cadcad-hacks">cadCAD Hacks - Season 1</a>, which in Hack 2 provides a step-by-step introduction to the the Predator-Prey model with cadCAD.</p>
+<h2 id="open-source-models-using-radcad">Open-source Models Using radCAD<a class="headerlink" href="#open-source-models-using-radcad" title="Permanent link">#</a></h2>
+<ul>
+<li><strong><a href="https://github.com/CADLabs/ethereum-economic-model">Ethereum Economic Model</a></strong> by CADLabs: A modular dynamical-systems model of Ethereum's validator economics</li>
+<li><strong><a href="https://github.com/ethereum/beaconrunner">Beacon Runner</a></strong> by Ethereum RIG: An agent-based model of Ethereum's Proof-of-Stake consensus layer</li>
+<li><strong><a href="https://github.com/reflexer-labs/geb-simulations">GEB Controller Simulations</a></strong> by Reflexer Protocol: A Proportional-Integral-Derivative (PID) controller based upon a reference document approach for the Maker DAI market that was never implemented</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
+</html>
