@@ -624,23 +624,18 @@ result = experiment.run()
 <h2 id="advanced-features">Advanced Features<a class="headerlink" href="#advanced-features" title="Permanent link">#</a></h2>
 <p>RadCAD offers a range of advanced features that allow a wide range of model classes, great flexibility and extendibility, customisation and improved performance.</p>
 <h3 id="advanced-features-model-classes-and-specifications">Advanced features - model classes and specifications:<a class="headerlink" href="#advanced-features-model-classes-and-specifications" title="Permanent link">#</a></h3>
-<p>these two work in dynamic:</p>
-<p><a href="/advanced_features/#iterating-over-a-model">/advanced_features/#iterating-over-a-model</a></p>
-<p><a href="../advanced_features/#iterating-over-a-model">advanced_features.md#iterating-over-a-model</a></p>
-<p>this doesn't work in dynamic</p>
-<p><a href="../advanced_features.md#iterating-over-a-model">../advanced_features.md#iterating-over-a-model</a></p>
 <ul>
-<li>Model classes are <a href="../advanced_features.md/#iterating-over-a-model">iterable</a>, so you can iterate over them step-by-step from one state to the next (useful for gradient descent, live digital twins)</li>
+<li>Model classes are <a href="../advanced_features/#iterating-over-a-model">iterable</a>, so you can iterate over them step-by-step from one state to the next (useful for gradient descent, live digital twins)</li>
 <li>Supports  <a href="https://en.wikipedia.org/wiki/State-space_representation">state-space analysis</a>  (i.e. simulation of system state over time) and <a href="https://en.wikipedia.org/wiki/Phase_space">phase-space analysis</a> analysis (i.e. generation of all unique system states in a given experimental setup)</li>
 <li>Parameters can be a dataclass! This enables typing and dot notation for accessing parameters.</li>
 </ul>
 <h3 id="advanced-features-model-implementation">Advanced features - model implementation:<a class="headerlink" href="#advanced-features-model-implementation" title="Permanent link">#</a></h3>
 <ul>
-<li><a href="/advanced_features/#selecting-single-or-multi-process-modes">Parallel processing</a> with multiple backend options: <code>multiprocessing</code>, <code>pathos</code>, <code>ray</code></li>
-<li><a href="/advanced_features/#disabling-state-deepcopy">Disable <code>deepcopy</code></a> option for improved performance (at cost of mutability)</li>
-<li>Robust <a href="/advanced_features/#exception-handling">exception handling</a> with partial results, and tracebacks</li>
-<li>Distributed computing and <a href="/advanced_features/#wip-remote-cluster-execution-using-ray">remote execution in a cluster</a> (AWS, GCP, Kubernetes, ...) using <a href="https://ray.io/">Ray - Fast and Simple Distributed Computing</a></li>
-<li><a href="/advanced_features/#hooks-to-extend-functionality">Hooks</a> to easily extend the functionality - e.g. save results to HDF5 file format after completion.</li>
+<li><a href="../advanced_features/#selecting-single-or-multi-process-modes">Parallel processing</a> with multiple backend options: <code>multiprocessing</code>, <code>pathos</code>, <code>ray</code></li>
+<li><a href="../advanced_features/#disabling-state-deepcopy">Disable <code>deepcopy</code></a> option for improved performance (at cost of mutability)</li>
+<li>Robust <a href="../advanced_features/#exception-handling">exception handling</a> with partial results, and tracebacks</li>
+<li>Distributed computing and <a href="../advanced_features/#wip-remote-cluster-execution-using-ray">remote execution in a cluster</a> (AWS, GCP, Kubernetes, ...) using <a href="https://ray.io/">Ray - Fast and Simple Distributed Computing</a></li>
+<li><a href="../advanced_features/#hooks-to-extend-functionality">Hooks</a> to easily extend the functionality - e.g. save results to HDF5 file format after completion.</li>
 </ul>
 <p>Please refer to the subsection <a href="../advanced_features/">advanced features</a> for more details.</p>
 
